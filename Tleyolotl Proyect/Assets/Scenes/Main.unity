@@ -113,56 +113,22 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &607680085
-Prefab:
+--- !u!1 &286554161 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1986986280927858, guid: d5fd1cb23143c284ca2ae595774a06cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 994516731}
+--- !u!114 &286554163
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4271445007751086, guid: 8f7cf35c3bd56154789216fc60d23309, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -4.319
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271445007751086, guid: 8f7cf35c3bd56154789216fc60d23309, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.548
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271445007751086, guid: 8f7cf35c3bd56154789216fc60d23309, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271445007751086, guid: 8f7cf35c3bd56154789216fc60d23309, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271445007751086, guid: 8f7cf35c3bd56154789216fc60d23309, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271445007751086, guid: 8f7cf35c3bd56154789216fc60d23309, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271445007751086, guid: 8f7cf35c3bd56154789216fc60d23309, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271445007751086, guid: 8f7cf35c3bd56154789216fc60d23309, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271445007751086, guid: 8f7cf35c3bd56154789216fc60d23309, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.92756903
-      objectReference: {fileID: 0}
-    - target: {fileID: 4271445007751086, guid: 8f7cf35c3bd56154789216fc60d23309, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.9297641
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 8f7cf35c3bd56154789216fc60d23309, type: 2}
-  m_IsPrefabParent: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 286554161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784c5c220fb7f0c47bcb19fb1aea1f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &783845020
 Prefab:
   m_ObjectHideFlags: 0
@@ -200,11 +166,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 010d39cbd03ee4c99a746c1f8ecdc0d8, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 010d39cbd03ee4c99a746c1f8ecdc0d8, type: 2}
       propertyPath: url
-      value: ws://127.0.0.1:8080/socket.io/?EIO=4&transport=websocket
+      value: ws://yolotl.herokuapp.com/socket.io/?EIO=4&transport=websocket
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 010d39cbd03ee4c99a746c1f8ecdc0d8, type: 2}
@@ -246,7 +212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4182301806598206, guid: d5fd1cb23143c284ca2ae595774a06cc, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 33396245112221726, guid: d5fd1cb23143c284ca2ae595774a06cc,
         type: 2}
@@ -367,7 +333,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4681887543022412, guid: 70fdd4b648702934783ab9f834c610d3, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 33392723859807730, guid: 70fdd4b648702934783ab9f834c610d3,
         type: 2}
@@ -536,6 +502,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerSelect: 0
+  PlayerOne: {fileID: 1751898200}
+  PlayerTwo: {fileID: 286554161}
 --- !u!4 &1693737317
 Transform:
   m_ObjectHideFlags: 0
@@ -547,5 +515,21 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1751898200 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1391289723352832, guid: 70fdd4b648702934783ab9f834c610d3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1381115556}
+--- !u!114 &1751898202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1751898200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784c5c220fb7f0c47bcb19fb1aea1f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
